@@ -1,0 +1,58 @@
+export const NAV_BY_ROLE = {
+  admin: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'Farmers', path: '/dashboard/farmers', icon: 'Sprout' },
+    { label: 'Products', path: '/dashboard/products', icon: 'Package' },
+    { label: 'Inventory', path: '/dashboard/inventory', icon: 'Warehouse' },
+    { label: 'Collection Centers', path: '/dashboard/collection-centers', icon: 'ClipboardCheck' },
+    { label: 'Orders', path: '/dashboard/orders', icon: 'ShoppingCart' },
+    { label: 'Shipments', path: '/dashboard/shipments', icon: 'Truck' },
+    { label: 'Buyers', path: '/dashboard/buyers', icon: 'Users' },
+    { label: 'Analytics', path: '/dashboard/analytics', icon: 'BarChart3' },
+    { label: 'Reports', path: '/dashboard/reports', icon: 'FileBarChart' },
+    { label: 'Users', path: '/dashboard/users', icon: 'UserCog' },
+    { label: 'Activity Logs', path: '/dashboard/activity-logs', icon: 'History' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  farmer: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'My Profile', path: '/dashboard/my-farmer-profile', icon: 'Sprout' },
+    { label: 'My Products', path: '/dashboard/products', icon: 'Package' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  collection_center: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'Collection Centers', path: '/dashboard/collection-centers', icon: 'ClipboardCheck' },
+    { label: 'Collection Records', path: '/dashboard/collection-records', icon: 'ScanLine' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  warehouse_manager: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'Inventory', path: '/dashboard/inventory', icon: 'Warehouse' },
+    { label: 'Reports', path: '/dashboard/reports', icon: 'FileBarChart' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  transporter: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'Shipments', path: '/dashboard/shipments', icon: 'Truck' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  retailer: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'Inventory / Stock', path: '/dashboard/retailer-stock', icon: 'Store' },
+    { label: 'Shipments', path: '/dashboard/shipments', icon: 'Truck' },
+    { label: 'Orders', path: '/dashboard/orders', icon: 'ShoppingCart' },
+    { label: 'Buyers', path: '/dashboard/buyers', icon: 'Users' },
+    { label: 'Reports', path: '/dashboard/reports', icon: 'FileBarChart' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  buyer: [
+    { label: 'Dashboard', path: '/dashboard', icon: 'LayoutDashboard' },
+    { label: 'My Buyer Profile', path: '/dashboard/my-buyer-profile', icon: 'Users' },
+    { label: 'Active Orders', path: '/dashboard/orders', icon: 'ShoppingCart' },
+    { label: 'Profile', path: '/dashboard/profile', icon: 'UserCircle' },
+  ],
+  customer: [
+    { label: 'Track a Product', path: '/track', icon: 'Search' },
+  ],
+};

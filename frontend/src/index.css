@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* ==========================================================
+   Agri Supply Chain — Design Tokens
+   Professional Green & White theme with dark mode support
+   ========================================================== */
+@theme {
+  --color-brand-50: #f0fdf4;
+  --color-brand-100: #dcfce7;
+  --color-brand-200: #bbf7d0;
+  --color-brand-300: #86efac;
+  --color-brand-400: #4ade80;
+  --color-brand-500: #22c55e;
+  --color-brand-600: #16a34a;
+  --color-brand-700: #15803d;
+  --color-brand-800: #166534;
+  --color-brand-900: #14532d;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100;
+}
+
+/* Glassmorphism card used across dashboards */
+.glass-card {
+  @apply bg-white/70 dark:bg-neutral-900/60 backdrop-blur-md border border-white/40 dark:border-neutral-800 shadow-sm rounded-2xl;
+}
+
+/* Reusable skeleton loader */
+.skeleton {
+  @apply animate-pulse bg-neutral-200 dark:bg-neutral-800 rounded-md;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-300 dark:bg-brand-700 rounded-full;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
